@@ -21,6 +21,8 @@
     "tailwindcss": "^2.0.2"
   },
   "dependencies": {
+    "@sanity/client": "^2.1.0",
+    "@sanity/image-url": "^0.140.19",
     "sirv-cli": "^1.0.0",
     "svelte-routing": "^1.4.2"
   }

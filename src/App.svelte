@@ -1,8 +1,9 @@
 <script context="module">
 	import { Router, Link, Route } from "svelte-routing";
 	import Nav from "./components/Nav.svelte";
-	import Home from "./pages/Home.svelte";
 	import FbSideBar from "./components/FBSideBar.svelte";
+	import Home from "./pages/Home.svelte";
+	import Menu from "./pages/Menu.svelte";
 	import Vision from "./pages/Vision.svelte";
 	export let url = "";
 </script>
@@ -35,6 +36,7 @@
 		<div class="lg:grid lg:grid-cols-3 sm:mt-8 md:mt-16 justify-center ">
 			<Route path="/" component={Home} />
 			<Route path="/vision" component={Vision} />
+			<Route path="/menu" component={Menu} />
 			<FbSideBar />
 		</div>
 	</div>

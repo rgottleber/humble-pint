@@ -1,7 +1,7 @@
 <script>
   let logo = "logo.png";
   import Hamburger from "./Hamburger.svelte";
-  import Menu from "./Menu.svelte";
+  import NavMenu from "./NavMenu.svelte";
   export let pages = [
     {
       text: "Home",
@@ -17,7 +17,7 @@
     },
     {
       text: "Menu",
-      slug: "menu",
+      slug: "/menu",
     },
     {
       text: "Merch",
@@ -37,5 +37,5 @@
 <img src={logo} alt="Humble Pint" class="h-64 w-full object-contain pb-2" />
 <div class="mx-auto w-full">
   <Hamburger {pages} />
-  <Menu {pages} />
+  <NavMenu {pages} />
 </div>
