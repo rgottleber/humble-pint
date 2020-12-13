@@ -1,7 +1,7 @@
 <script>
   import client from "../sanity-client.js";
   import urlBuilder from "@sanity/image-url";
-  const query = '*[_type == "item"]';
+  const query = '*[_type == "item"] | order(type asc)';
   let data;
   let menuTypes;
   const urlFor = (source) => urlBuilder(client).image(source);
@@ -28,7 +28,7 @@
     <p>Loading.......</p>
   {:then}
     {#each (menuTypes = [...new Set(data.map((item) => item.type))]) as menuType}
-      <p class="text-black text-5xl text-gray-600">{menuType}</p>
+      <p class="text-black text-5xl text-gray-600">{menuType.split('-')[1]}</p>
       {#each data.filter((item) => item.type === menuType) as menuItem}
         <div class="flex flex-row pt-6">
           <div class="w-1/3 max-w-max">
@@ -40,6 +40,8 @@
           {menuItem.name}
           -
           {formatter.format(menuItem.price / 100)}
+
+          <p>{menuItem.description}`</p>
         </div>
       {/each}
     {/each}
