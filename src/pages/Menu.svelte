@@ -28,7 +28,10 @@
     <p>Loading.......</p>
   {:then}
     {#each (menuTypes = [...new Set(data.map((item) => item.type))]) as menuType}
-      <p class="text-black text-5xl text-gray-600">{menuType.split('-')[1]}</p>
+      <p
+        class="text-black text-5xl text-gray-600 mt-10 text-gray-400 md:text-xl lg:text-3xl font-black justify-center border-t-2 border-b-2 border-gray-600">
+        {menuType.split('-')[1]}
+      </p>
       {#each data.filter((item) => item.type === menuType) as menuItem}
         <div class="flex flex-row pt-6">
           <div class="w-1/3 max-w-max">
@@ -37,11 +40,13 @@
               alt={menuItem.name}
               class="h-full w-full object-cover object-center" />
           </div>
-          {menuItem.name}
-          -
-          {formatter.format(menuItem.price / 100)}
-
-          <p>{menuItem.description}`</p>
+          <div class="w-7/12 ml-2">
+            <div class="font-black md:text-xl lg:text-2xl">{menuItem.name}</div>
+            <p class="text-gray-400 text-sm">{menuItem.description}</p>
+          </div>
+          <div class="pt-8 text-gray-500 text-black">
+            {formatter.format(menuItem.price / 100)}
+          </div>
         </div>
       {/each}
     {/each}
