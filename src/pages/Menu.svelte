@@ -44,7 +44,7 @@
             <div class="font-black md:text-xl lg:text-2xl">{menuItem.name}</div>
             <p class="text-gray-400 text-sm">{menuItem.description}</p>
           </div>
-          <div class="pt-8 text-gray-500 text-black">
+          <div class="pl-2 pt-8 text-gray-500 font-black">
             {formatter.format(menuItem.price / 100)}
           </div>
         </div>

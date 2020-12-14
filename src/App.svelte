@@ -5,6 +5,7 @@
 	import Home from "./pages/Home.svelte";
 	import Menu from "./pages/Menu.svelte";
 	import Vision from "./pages/Vision.svelte";
+	import OnTap from "./pages/OnTap.svelte";
 	export let url = "";
 </script>
 
@@ -37,6 +38,7 @@
 			<Route path="/" component={Home} />
 			<Route path="/vision" component={Vision} />
 			<Route path="/menu" component={Menu} />
+			<Route path="/tap" component={OnTap} />
 			<FbSideBar />
 		</div>
 	</div>
