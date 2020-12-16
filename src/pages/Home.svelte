@@ -14,13 +14,6 @@
   }
 </style>
 
-<svelte:head>
-  <title>
-    Humble Pint Brewing Co. – Handcrafted Beer – Texas Friendly Service –
-    Pacific NW Roots
-  </title>
-</svelte:head>
-
 <div
   class="bg-white rounded-lg p-8 md:col-span-2 mx-4 md:mx-0 md:mx-10 sm:mt-8 md:mt-10 lg:mx-16">
   <div class="font-black">Humble Pint Brewing Co.</div>

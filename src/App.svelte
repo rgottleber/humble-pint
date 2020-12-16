@@ -31,6 +31,14 @@
 	}
 </style>
 
+<svelte:head>
+	<title>
+		Humble Pint Brewing Co. – Handcrafted Beer – Texas Friendly Service –
+		Pacific NW Roots
+	</title>
+	<link rel="icon" type="image/svg+xml" href="/HumblePint.svg" />
+</svelte:head>
+
 <Router {url}>
 	<Nav />
 	<div class="bgLines flex justify-center min-h-screen">
