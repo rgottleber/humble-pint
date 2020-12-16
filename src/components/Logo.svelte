@@ -81,7 +81,7 @@
     } */
 
     .trees {
-      animation: growT 5s ease-in;
+      animation: growT 2s ease-in;
       transform-origin: center bottom;
     }
 
@@ -94,7 +94,7 @@
       }
     }
     .mountains {
-      animation: growM 5s ease-in;
+      animation: growM 2s ease-in;
       transform-origin: center bottom;
     }
 
