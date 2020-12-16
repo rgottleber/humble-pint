@@ -30,11 +30,11 @@
       <div class="flex flex-row pt-6">
         <div class="w-1/3 max-w-max">
           <img
-            src={urlFor(beer.image).auto('format').size(500, 500).url()}
+            src={urlFor(beer.image).size(500, 500).url()}
             alt={beer.name}
-            class="h-full w-full object-cover object-center" />
+            class="w-full object-cover object-center" />
         </div>
-        <div class="w-7/12 ml-2">
+        <div class="w-2/3 ml-2">
           <div class="font-black md:text-xl lg:text-2xl">{beer.name}</div>
           <div
             class="pb-2 flex flex-row flex-wrap pt-8 text-gray-500 font-bold">

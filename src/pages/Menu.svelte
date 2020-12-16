@@ -29,7 +29,7 @@
   {:then}
     {#each (menuTypes = [...new Set(data.map((item) => item.type))]) as menuType}
       <p
-        class="text-black text-5xl text-gray-600 mt-10 text-gray-400 md:text-xl lg:text-3xl font-black justify-center border-t-2 border-b-2 border-gray-600">
+        class="text-5xl text-gray-600 mt-10 md:text-xl lg:text-3xl font-black justify-center border-t-2 border-b-2 border-gray-600">
         {menuType.split('-')[1]}
       </p>
       {#each data.filter((item) => item.type === menuType) as menuItem}
