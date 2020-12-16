@@ -1,6 +1,7 @@
 <script>
-  let logo = "logo.png";
+  let logo = "HumblePint.svg";
   import Hamburger from "./Hamburger.svelte";
+  import Logo from "./Logo.svelte";
   import NavMenu from "./NavMenu.svelte";
   export let pages = [
     {
@@ -34,7 +35,8 @@
   ];
 </script>
 
-<img src={logo} alt="Humble Pint" class="h-64 w-full object-contain pb-2" />
+<Logo />
+
 <div class="mx-auto w-full">
   <Hamburger {pages} />
   <NavMenu {pages} />
