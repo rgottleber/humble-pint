@@ -20,7 +20,7 @@
 </script>
 
 <div
-  class="bg-white rounded-lg p-8 md:col-span-2 mx-4 md:mx-0 md:mx-10 sm:mt-8 md:mt-10 lg:mx-16">
+  class="bg-white rounded-lg p-8 md:col-span-2 mx-4 md:mx-10 sm:mt-8 md:mt-10 lg:mx-16">
   <div class="font-black">Humble Pint Brewing Co.</div>
 
   {#await getData()}
@@ -34,7 +34,7 @@
             alt={beer.name}
             class="w-full object-cover object-center" />
         </div>
-        <div class="w-2/3 ml-2">
+        <div class="w-2/3 ml-4">
           <div class="font-black md:text-xl lg:text-2xl">{beer.name}</div>
           <div
             class="pb-2 flex flex-row flex-wrap pt-8 text-gray-500 font-bold">

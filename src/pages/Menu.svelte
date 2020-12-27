@@ -21,7 +21,7 @@
 </script>
 
 <div
-  class="bg-white rounded-lg p-8 md:col-span-2 mx-4 md:mx-0 md:mx-10 sm:mt-8 md:mt-10 lg:mx-16">
+  class="bg-white rounded-lg p-8 md:col-span-2 mx-4 md:mx-10 sm:mt-8 md:mt-10 lg:mx-16">
   <div class="font-black">Humble Pint Brewing Co.</div>
 
   {#await getData()}
@@ -40,11 +40,11 @@
               alt={menuItem.name}
               class="h-full w-full object-cover object-center" />
           </div>
-          <div class="w-7/12 ml-2">
+          <div class="w-7/12 ml-4">
             <div class="font-black md:text-xl lg:text-2xl">{menuItem.name}</div>
-            <p class="text-gray-400 text-sm">{menuItem.description}</p>
+            <p class="text-gray-600 text-sm">{menuItem.description}</p>
           </div>
-          <div class="pl-2 pt-8 text-gray-500 font-black">
+          <div class="pl-2 pt-8 text-gray-700 font-black">
             {formatter.format(menuItem.price / 100)}
           </div>
         </div>
